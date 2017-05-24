@@ -1,0 +1,1 @@
+The contents of this file was taken wholesale from Microsoft's [`System.Linq.Queryable`](https://github.com/dotnet/corefx/tree/master/src/System.Linq.Queryable/src/System/Linq) code base, which is MIT-licensed. Several of the classes needed to modify the behavior of `AsQueryable` are marked as `internal`, which makes it difficult to meaningfully extend.

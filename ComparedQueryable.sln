@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparedQueryable", "src\ComparedQueryable.csproj", "{C14F6027-67AD-45C3-912B-9909AC2BF8A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparedQueryable", "src\ComparedQueryable\ComparedQueryable.csproj", "{C14F6027-67AD-45C3-912B-9909AC2BF8A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturalSort", "src\NaturalSort\NaturalSort.csproj", "{E5793449-CCFB-4BAB-8CE2-6899DD47C1DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C84AF587-3DD8-45B3-8426-92949B9BFF97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1805A518-B7C4-4AE7-BBE7-A91B70927E16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturalSort.Test", "test\NaturalSort.Test\NaturalSort.Test.csproj", "{C171EF77-7E52-4145-AE03-1491171DF96A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparedQueryable.Test", "test\ComparedQueryable.Test\ComparedQueryable.Test.csproj", "{33C97678-301A-4658-AAED-E97D763749FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +25,26 @@ Global
 		{C14F6027-67AD-45C3-912B-9909AC2BF8A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C14F6027-67AD-45C3-912B-9909AC2BF8A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C14F6027-67AD-45C3-912B-9909AC2BF8A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5793449-CCFB-4BAB-8CE2-6899DD47C1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5793449-CCFB-4BAB-8CE2-6899DD47C1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5793449-CCFB-4BAB-8CE2-6899DD47C1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5793449-CCFB-4BAB-8CE2-6899DD47C1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C171EF77-7E52-4145-AE03-1491171DF96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C171EF77-7E52-4145-AE03-1491171DF96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C171EF77-7E52-4145-AE03-1491171DF96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C171EF77-7E52-4145-AE03-1491171DF96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C97678-301A-4658-AAED-E97D763749FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C97678-301A-4658-AAED-E97D763749FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C97678-301A-4658-AAED-E97D763749FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C97678-301A-4658-AAED-E97D763749FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C14F6027-67AD-45C3-912B-9909AC2BF8A2} = {C84AF587-3DD8-45B3-8426-92949B9BFF97}
+		{E5793449-CCFB-4BAB-8CE2-6899DD47C1DF} = {C84AF587-3DD8-45B3-8426-92949B9BFF97}
+		{C171EF77-7E52-4145-AE03-1491171DF96A} = {1805A518-B7C4-4AE7-BBE7-A91B70927E16}
+		{33C97678-301A-4658-AAED-E97D763749FE} = {1805A518-B7C4-4AE7-BBE7-A91B70927E16}
 	EndGlobalSection
 EndGlobal

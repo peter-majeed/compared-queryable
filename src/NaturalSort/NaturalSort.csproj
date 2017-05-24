@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageId>Buildium.NaturalSort</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Title>NaturalSortComparer</Title>
+    <Authors>Peter A Majeed</Authors>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/buildium/compared-queryable/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/buildium/compared-queryable</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>
+      A way to "naturally" sort strings so that ordering the strings "10" and "2" returns "2" followed by 10.
+    </Description>
+    <PackageReleaseNotes>Initial release of the natural string comparer.</PackageReleaseNotes>
+    <Copyright>Copyright 2017 Buildium, LLC</Copyright>
+    <PackageTags>natural sort comparer icomparer order orderby string</PackageTags>
+  </PropertyGroup>
+
+</Project>
