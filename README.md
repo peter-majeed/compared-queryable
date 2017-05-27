@@ -39,7 +39,7 @@ Try instead using the following code to order the `Queryable` naturally.
 
 #### Usage
 ```
-Install-Package ComparedQueryable
+Install-Package Buildium.ComparedQueryable
 
 var collection = new[]{ new {Name = "report 1.txt"}, new {Name = "report 10.txt"}, new {Name = "report 2.txt"} }
     .AsNaturalQueryable()
