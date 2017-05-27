@@ -33,9 +33,26 @@ namespace ComparedQueryable
             ReadOnlyCollection<Expression> argList)
         {
             var queryableArgs = base.FixupQuotedArgs(mi, argList);
+            return GetOrderByParameters(mi, argList, queryableArgs);
+        }
+
+        private ReadOnlyCollection<Expression> GetOrderByParameters(MethodInfo mi,
+            IReadOnlyCollection<Expression> argList,
+            ReadOnlyCollection<Expression> queryableArgs)
+        {
             // If we're dealing with any other functions besides the ordering functions, let's do what we normally do
             // with IQueryables.
             if (!ComparerFunctions.Contains(mi.Name))
+            {
+                return queryableArgs;
+            }
+
+            // If the caller has already provided an IComparer argument (i.e. they called the IQueryable directly), let
+            // them use the one they passed.
+            var comparerExpresion = argList.LastOrDefault() as ConstantExpression;
+            if (comparerExpresion != null
+                && comparerExpresion.Type.IsGenericType
+                && comparerExpresion.Type.GetGenericTypeDefinition() == typeof(IComparer<>))
             {
                 return queryableArgs;
             }
@@ -78,6 +95,7 @@ namespace ComparedQueryable
         {
             return methodInfo
                 .GetParameters()
+                .Where(parameterInfo => parameterInfo.ParameterType.IsGenericType)
                 .Any(parameterInfo => parameterInfo.ParameterType.GetGenericTypeDefinition() == typeof(IComparer<>));
         }
     }

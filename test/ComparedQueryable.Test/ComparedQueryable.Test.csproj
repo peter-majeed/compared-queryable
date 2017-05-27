@@ -37,7 +37,17 @@
       <HintPath>..\..\packages\FluentAssertions.4.19.2\lib\net45\FluentAssertions.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.4.3.0\lib\net462\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +69,54 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComparedQueryableTest.cs" />
+    <Compile Include="NativeQueryableTests\AggregateTests.cs" />
+    <Compile Include="NativeQueryableTests\AllTests.cs" />
+    <Compile Include="NativeQueryableTests\AnyTests.cs" />
+    <Compile Include="NativeQueryableTests\AssertExtensions.cs" />
+    <Compile Include="NativeQueryableTests\AverageTests.cs" />
+    <Compile Include="NativeQueryableTests\CastTests.cs" />
+    <Compile Include="NativeQueryableTests\ConcatTests.cs" />
+    <Compile Include="NativeQueryableTests\ContainsTests.cs" />
+    <Compile Include="NativeQueryableTests\CountTests.cs" />
+    <Compile Include="NativeQueryableTests\DefaultIfEmptyTests.cs" />
+    <Compile Include="NativeQueryableTests\DistinctTests.cs" />
+    <Compile Include="NativeQueryableTests\ElementAtOrDefaultTests.cs" />
+    <Compile Include="NativeQueryableTests\ElementAtTests.cs" />
+    <Compile Include="NativeQueryableTests\EnumerableQueryTests.cs" />
+    <Compile Include="NativeQueryableTests\EnumerableTests.cs" />
+    <Compile Include="NativeQueryableTests\ExceptTests.cs" />
+    <Compile Include="NativeQueryableTests\FirstOrDefaultTests.cs" />
+    <Compile Include="NativeQueryableTests\FirstTests.cs" />
+    <Compile Include="NativeQueryableTests\GroupByTests.cs" />
+    <Compile Include="NativeQueryableTests\GroupJoinTests.cs" />
+    <Compile Include="NativeQueryableTests\IntersectTests.cs" />
+    <Compile Include="NativeQueryableTests\JoinTests.cs" />
+    <Compile Include="NativeQueryableTests\LastOrDefaultTests.cs" />
+    <Compile Include="NativeQueryableTests\LastTests.cs" />
+    <Compile Include="NativeQueryableTests\LongCountTests.cs" />
+    <Compile Include="NativeQueryableTests\MaxTests.cs" />
+    <Compile Include="NativeQueryableTests\MinTests.cs" />
+    <Compile Include="NativeQueryableTests\OfTypeTests.cs" />
+    <Compile Include="NativeQueryableTests\OrderByDescendingTests.cs" />
+    <Compile Include="NativeQueryableTests\OrderByTests.cs" />
+    <Compile Include="NativeQueryableTests\Queryable.cs" />
+    <Compile Include="NativeQueryableTests\QueryFromExpressionTests.cs" />
+    <Compile Include="NativeQueryableTests\ReverseTests.cs" />
+    <Compile Include="NativeQueryableTests\SelectManyTests.cs" />
+    <Compile Include="NativeQueryableTests\SelectTests.cs" />
+    <Compile Include="NativeQueryableTests\SequenceEqualTests.cs" />
+    <Compile Include="NativeQueryableTests\SingleOrDefaultTests.cs" />
+    <Compile Include="NativeQueryableTests\SingleTests.cs" />
+    <Compile Include="NativeQueryableTests\SkipTests.cs" />
+    <Compile Include="NativeQueryableTests\SkipWhileTests.cs" />
+    <Compile Include="NativeQueryableTests\SumTests.cs" />
+    <Compile Include="NativeQueryableTests\TakeTests.cs" />
+    <Compile Include="NativeQueryableTests\TakeWhileTests.cs" />
+    <Compile Include="NativeQueryableTests\ThenByDescendingTests.cs" />
+    <Compile Include="NativeQueryableTests\ThenByTests.cs" />
+    <Compile Include="NativeQueryableTests\UnionTests.cs" />
+    <Compile Include="NativeQueryableTests\WhereTests.cs" />
+    <Compile Include="NativeQueryableTests\ZipTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
