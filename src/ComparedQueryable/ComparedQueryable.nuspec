@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Buildium.ComparedQueryable</id>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
     <authors>Peter A Majeed</authors>
     <owners>Buildium, LLC</owners>
     <licenseUrl>https://raw.githubusercontent.com/buildium/compared-queryable/master/LICENSE</licenseUrl>
@@ -12,8 +12,7 @@
         A way to order IQueryable instances by a default IComparer&lt;T&gt; instance.
     </description>
     <releaseNotes>
-        Initial release of the ComparedQueryable, which gives the ability to change the default ordering of IQueryable
-        objects. Still under development.
+        Including XML documentation with the project.
     </releaseNotes>
     <copyright>Copyright 2017 Buildium, LLC</copyright>
     <tags></tags>
