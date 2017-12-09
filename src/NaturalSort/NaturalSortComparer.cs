@@ -5,7 +5,7 @@ namespace NaturalSort
 {
     /// <summary>
     /// Sorts strings "naturally", so that the string "2" shows up before the string "10".
-    /// </summary>  
+    /// </summary>
     public class NaturalSortComparer : IComparer<string>
     {
         /// <summary>
