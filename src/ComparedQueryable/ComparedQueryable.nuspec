@@ -16,6 +16,9 @@
     </releaseNotes>
     <copyright>Copyright 2017 Buildium, LLC</copyright>
     <tags></tags>
+    <dependencies>
+      <dependency id="Buildium.NaturalSort" version="1.0.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\ComparedQueryable.dll" target="lib\net461\ComparedQueryable.dll" />
