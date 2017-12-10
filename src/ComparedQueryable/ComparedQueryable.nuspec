@@ -12,9 +12,14 @@
         A way to order IQueryable instances by a default IComparer&lt;T&gt; instance.
     </description>
     <releaseNotes>
-        Including XML documentation with the project.
+        Slimming down the files in the package.
     </releaseNotes>
     <copyright>Copyright 2017 Buildium, LLC</copyright>
     <tags></tags>
+    <files>
+        <file src="bin\Release\ComparedQueryable.dll" target="lib\net461\ComparedQueryable.dll" />
+        <file src="bin\Release\ComparedQueryable.pdb" target="lib\net461\ComparedQueryable.pdb" />
+        <file src="bin\Release\ComparedQueryable.xml" target="lib\net461\ComparedQueryable.xml" />
+    </files>
   </metadata>
 </package>
